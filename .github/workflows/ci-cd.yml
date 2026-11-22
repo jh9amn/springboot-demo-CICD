@@ -54,7 +54,7 @@ jobs:
             docker run -d \
                           --name spring-boot-app \
                           --restart unless-stopped \
-                          -p 8080:8081 \
+                          -p 8081:8081 \
                           ${{ secrets.DOCKER_USERNAME }}/${{ env.IMAGE_NAME }}:latest
 
             docker image prune -f
