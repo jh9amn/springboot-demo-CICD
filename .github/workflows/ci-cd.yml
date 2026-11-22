@@ -58,3 +58,4 @@ jobs:
                           ${{ secrets.DOCKER_USERNAME }}/${{ env.IMAGE_NAME }}:latest
 
             docker image prune -f
+            
