@@ -57,4 +57,4 @@ jobs:
                           -p 8081:8081 \
                           ${{ secrets.DOCKER_USERNAME }}/${{ env.IMAGE_NAME }}:latest
 
-            docker image prune -f
+            docker image prune -f 
