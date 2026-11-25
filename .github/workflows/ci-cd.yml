@@ -24,7 +24,7 @@ jobs:
         with: 
           distribution: 'temurin'
           java-version: '21'
-          chache: 'maven'
+          cache: 'maven'
 
       - name: Build JAR
         run: mvn clean package -DskipTests   
