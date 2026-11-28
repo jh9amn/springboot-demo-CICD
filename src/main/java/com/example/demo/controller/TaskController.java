@@ -27,7 +27,12 @@ public class TaskController {
     @GetMapping("/{id}")
     public ResponseEntity<Task> one(@PathVariable Long id) {
         return repo.findById(id).map(ResponseEntity::ok)
-                   .orElse(ResponseEntity.notFound().build());
+                .orElse(ResponseEntity.notFound().build());
+    }
+    
+    @GetMapping("/testing")
+    public String testing() {
+        return "Testing GitHub Action is working!";
     }
 
     @PostMapping
